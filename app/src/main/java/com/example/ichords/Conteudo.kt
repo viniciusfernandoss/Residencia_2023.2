@@ -19,7 +19,7 @@ class Conteudo : AppCompatActivity() {
         val listaConteudos: MutableList<item> = mutableListOf()
         val adapterConteudo = AdapterConteudo(this,  listaConteudos)
         recyclerView_conteudo.adapter = adapterConteudo
-
+        //Oi
         val conteudo1 = item(
             R.drawable.logotrilha,
             "Introdução ao Violão"

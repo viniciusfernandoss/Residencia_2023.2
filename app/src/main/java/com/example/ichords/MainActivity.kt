@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 overridePendingTransition(0,0)
                 isFirstClick = false
             } else {
-                val intent = Intent(this, Conteudo::class.java)
+                val intent = Intent(this, trilha::class.java)
                 startActivity(intent)
                 overridePendingTransition(0,0)
             }
