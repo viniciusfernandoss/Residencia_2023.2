@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="79dp"
+    android:layout_margin="10dp"
+    android:background="@color/cinzaMedio">
+
+    <ImageView
+        android:id="@+id/img_ModuloConteudo"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/logotrilha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_TituloConteudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Técnica de Dedilhado"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_ModuloConteudo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_BarConteudo"
+        android:layout_width="240dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="135dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_ModuloConteudo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TituloConteudo" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_DescricaoConteudo"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_keyboard_arrow_right_24" />
+
+    <TextView
+        android:id="@+id/txt_quantidadeConteudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="0/4"
+        android:textColor="@color/blue"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_DescricaoConteudo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
